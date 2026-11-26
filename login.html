@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Log In / Sign Up</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="auth-card" id="authCard">
+    <div class="tabs">
+      <button type="button" class="tab-btn active" id="loginTab">Log In</button>
+      <button type="button" class="tab-btn" id="signupTab">Sign Up</button>
+    </div>
+
+    <!-- Log In Form -->
+    <form id="loginForm" class="auth-form">
+      <h2>Welcome Back</h2>
+      <p class="subtitle">Demo: <code>user@example.com</code> / <code>password123</code></p>
+
+      <div class="input-group">
+        <label for="loginEmail">Email</label>
+        <input type="email" id="loginEmail" placeholder="you@example.com" required />
+      </div>
+
+      <div class="input-group">
+        <label for="loginPassword">Password</label>
+        <input type="password" id="loginPassword" placeholder="Enter your password" required />
+      </div>
+
+      <div id="errorBox" class="message error hidden"></div>
+      <div id="successBox" class="message success hidden"></div>
+
+      <button type="submit" class="submit-btn" id="loginBtn">Log In</button>
+      <button type="button" class="reset-btn hidden" id="resetBtn">Reset Demo Attempts</button>
+    </form>
+
+    <!-- Sign Up Form -->
+    <form id="signupForm" class="auth-form hidden">
+      <h2>Create Account</h2>
+      <p class="subtitle">Sign up to test your own password</p>
+
+      <div class="input-group">
+        <label for="signupEmail">Email</label>
+        <input type="email" id="signupEmail" placeholder="you@example.com" required />
+      </div>
+
+      <div class="input-group">
+        <label for="signupPassword">Password</label>
+        <input type="password" id="signupPassword" placeholder="Create a password" required />
+      </div>
+
+      <div id="signupMsg" class="message success hidden"></div>
+
+      <button type="submit" class="submit-btn">Sign Up</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
