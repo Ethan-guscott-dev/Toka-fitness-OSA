@@ -1,54 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charse="UTF-8">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>ToKa Fitness</title>
-  </head>
-<body> 
-  <!-- Header section -->
+    <!-- Boxicons for menu and social icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-  <header>
-    <a href="#home" class="logo">ToKa <span>Fitness</span></a>
+    <!-- Header Section -->
+    <header>
+        <a href="#home" class="logo">ToKa <span>Fitness</span></a>
 
-    <div class="bx bx-menu" id="menu-icon"></div>
+        <div class="bx bx-menu" id="menu-icon"></div>
 
-    <ul class="navbar">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#about">About us</a></li>
-      <li><a href="#plans">Pricing</a></li>
-      <li><a href="#review">Review</a></li>
-    </ul>
-  </header>
-  
-  <!-- Home section code -->
-   <section class="home" id="home">
-    <div class="home-content">
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#plans">Pricing</a></li>
+            <li><a href="#review">Review</a></li>
+        </ul>
 
-      <h3>Build Your</h3>
-      <h1>Dream Physique</h1>
-      <h3><span class= "multiple-text"> Bodybuilding</span></h3>
+        <div class="top-btn">
+            <a href="#" class="nav-btn open-modal" data-plan="Free Trial">Join Us</a>
+        </div>
+    </header>
 
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborisosam magni quia magnam nemo verita.</p>
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Build Your</h3>
+            <h1>Dream Physique</h1>
+            <h3><span class="multiple-text">Bodybuilding</span></h3>
 
-      <a href="#" class="btn">Join Us</a>
-      <div class="home-img">
-        <img src="" alt="Home Image"
-      </div>
+            <p>Push past your limits with state-of-the-art equipment, expert coaching, and a community dedicated to helping you become stronger every day.</p>
 
-    </div>
-   </section>
+            <a href="#plans" class="btn">Join Us</a>
+        </div>
 
-   <!-- Service section code -->
+        <div class="home-img">
+            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=900&q=80" alt="ToKa Fitness Gym">
+        </div>
+    </section>
 
-   <section class="Services" id="Services">
-    <h2 class="heading">Our <Span>Services</Span></h2>
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <h2 class="heading">Our <span>Services</span></h2>
 
-    <div class="services-content">
-      <img src="" alt="0">
-    </div>
-   </section>
-</body>
-</html>
+        <div class="services-content">
+            <div class="row">
+                <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=600&q=80" alt="Physical Fitness">
+                <h4>Physical Fitness</h4>
+            </div>
+
+            <div class="row">
+                <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=600&q=80" alt="Weight Gain">
+                <h4>Weight Gain</h4>
+            </div>
+
+            <div class="row">
+                <img src="https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?auto=format&fit=crop&w=600&q=80" alt="Strength Training">
+                <h4>Strength Training</h4>
+            </div>
+
+            <div class="row">
+                <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=600&q=80" alt="Fat Loss">
+                <h4>Fat Loss</h4>
+            </div>
+
+            <div class="row">
+                <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=600&q=80" alt="Weightlifting">
+                <h4>Weightlifting</h4>
+            </div>
+
+            <div class="row">
+                <img src="https://images.unsplash.com/photo-1552674605-db6ffd4facb5?auto=format&fit=crop&w=600&q=80" alt="Running & Cardio">
+                <h4>Running & Cardio</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=800&q=80" alt="About ToKa Fitness">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">Why Choose <span>Us?</span></h2>
+            <p>Our diverse membership base creates a friendly and supportive atmosphere, where you can make friends and stay motivated.</p>
+            <p>Whether you are stepping into a gym for the first time or preparing for a competition, our certified trainers tailor every workout to your goals.</p>
+            <p>We offer 24/7 access, modern recovery zones, and nutrition guidance so you get results inside and outside the weight room.</p>
+            <a href="#" class="btn open-modal" data-plan="Free Class">Book a Free Class</a>
+        </div>
+    </section>
+
+    <!-- Pricing Plans Section -->
+    <section class="plans" id="plans">
+        <h2 class="heading">Our <span>Plans</span></h2>
+
+        <div class="plans-content">
+            <div class="box">
+                <h3>BASIC</h3>
+                <h2><span>$29/Month</span></h2>
+                <ul>
+                    <li>Smart workout plan</li>
+                    <li>At-home workouts</li>
+                    <li>Full gym floor access</li>
+                    <li>Locker room access</li>
+                </ul>
+                <a href="#" class="open-modal" data-plan="Basic ($29/mo)">
+                    Join Now
+                    <i class='bx bx-right-arrow-alt'></i>
+                </a>
+            </div>
+
+            <div class="box">
+                <h3>PRO</h3>
+                <h2><span>$59/Month</span></h2>
+                <ul>
+                    <li>Pro GYMs access</li>
+                    <li>Smart workout plan</li>
+                    <li>Group fitness classes</li>
+                    <li>1 Personal training session</li>
+                </ul>
+                <a href="#" class="open-modal" data-plan="Pro ($59/mo)">
+                    Join Now
+                    <i class='bx bx-right-arrow-alt'></i>
+                </a>
+            </div>
+
+            <div class="box">
+                <h3>PREMIUM</h3>
+                <h2><span>$99/Month</span></h2>
+                <ul>
+                    <li>ELITE Gyms & Classes</li>
+                    <li>Pro GYMs access</li>
+                    <li>Custom nutrition & meal plan</li>
+                    <li>Weekly personal training</li>
+                </ul>
+                <a href="#" class="open-modal" data-plan="Premium ($99/mo)">
+                    Join Now
+                    <i class='bx bx-right-arrow-alt'></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Review Section -->
+    <section class="review" id="review">
+        <div class="review-box">
+            <h2 class="heading">Client <span>Reviews</span></h2>
+
+            <div class="wrapper">
+                <div class="review-item">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&q=80" alt="John">
+                    <h2>John</h2>
+                    <div class="rating">
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                    </div>
+                    <p>"ToKa Fitness completely changed my routine. The trainers actually check your form and keep you accountable every week."</p>
+                </div>
+
+                <div class="review-item">
+                    <img src="
